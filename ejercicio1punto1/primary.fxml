@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.ejercicio1punto1.PrimaryController">
+      <HBox spacing="15.0">  
+                <children>
+                    <Label text="Fecha de nacimiento"/> 
+                    <TextField fx:id="txtFecha" promptText="dd/mm/aaaa"/>
+                </children>
+      </HBox>
+      <HBox spacing="15.0">  
+                <children>
+                    <Button fx:id="btnCalcular" text="Calcular" onAction="#btnCalcular_Click"/>
+                    <Button fx:id="btnLimpiar" text="Limpiar" onAction="#btnLimpiar_Click" />
+                </children>
+      </HBox>
+      <Label fx:id="lblEdad" text=""/>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
